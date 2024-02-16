@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+    <title>Document</title>
+<style>
+     .slogan {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        font-size: 24px;
+        font-family: cursive;
+        font-weight:700;
+      color: aquamarine;
+      
+
+      }
+      .emoji{
+      max-width:100%;
+      height: 50%;
+      }
+      .navbar-brand{
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: 700;
+    text-decoration: none;
+ }
+ .container-fluid {
+  --bs-gutter-x: 0rem !important;
+}
+        .row{
+            width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+
+        }   
+        .snap{
+          text-align: center;
+          color: aquamarine;
+          font-weight: 900;
+          font-family:'alkatra', cursive;
+        } 
+</style>
+</head>
+<body>
+    <!----header-->
+    <div class="container-fluid">
+        <div id="header"></div>
+     </div>
+      <!---imag part-->
+      
+        <div class="logo">
+          <img src="https://chandigarhupdates.com/wp-content/uploads/2018/07/Elante-Mall-Chandigarh.png" width="1600px"  class="emoji">
+            <!----slogan-->
+            <div class="slogan">
+              <h3 class="snap">ShopSnap</h3>
+             <h1> Discover Style, Shop with Smiles</h1>
+        </div>
+            </div>
+          
+         <div id="navbar"></div>
+         <div id="footer"></div>
+  
+    <!---dynamice adding header and footer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+              $ (function () {
+            $("#header").load("head.html");
+            $("#navbar").load("navbar.html")
+            
+            $("#footer").load("footer.html");
+        });
+        
+
+    </script>
+</body>
+</html>

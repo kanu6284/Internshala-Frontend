@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  
+     .navbar-brand{
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: 700;
+    text-decoration: none;
+
+    
+  }
+  .nav{
+    background-color: lightblue;;
+    color: black;
+    padding: 0 20px; 
+    padding-left: 0 20px;
+    padding-right: 0 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  .container-fluid{
+    background-color: #4fa2bb;
+    position: relative;
+    max-width: 100%; 
+    padding: 0%; 
+    
+ }
+ .d-flex{
+  padding: 10px 30px 10px 30px;
+      background-color: white;
+      color:white;
+      font-size: 20px;
+      font-weight: 600px;
+      text-decoration: none;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      color: black;
+  }
+  img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: ;
+    overflow-y: ;
+}
+.navbar {
+    --bs-navbar-padding-x: 1!important;
+}
+.fa-2x {
+    font-size: 2.5rem;
+    --bs-navbar-brand-margin-end: -1rem;
+    
+}
+.login-button {
+    margin-right: 10px; 
+}
+.cart-icon {
+    padding: 5px;
+}
+.form-control {
+  width: auto !important;
+}
+
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          <div class="logo">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2GH8QtoNyo79cjQBd8be4-unywLQv8QKrHQ&usqp=CAU" height="70px"  width="90px">
+              <a class="navbar-brand" href="#">ShopSnap</a>
+              
+          </div> 
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           
+          </ul>
+          <form class="d-flex me-auto" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="login.html" class="btn btn-primary login-button">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="fas fa-shopping-cart fa-2x cart-icon" style="color: #f05193;" href="cart.html"></a>
+        </li>
+        
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+      
+      <!--header 2nd section-->
+      <ul class="nav justify-content-center">
+        <li class="nav-item ">
+          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="all pro.html">All Product</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Women
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="womeallpro.html">All Products</a></li>
+                <li><a class="dropdown-item" href="wodress.html">Dress</a></li>
+                <li><a class="dropdown-item" href="womenpants.html">Pants</a></li>
+                <li><a class="dropdown-item" href="skirts.html">Skirt</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Men
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="menallpro.html">All Products</a></li>
+                    <li><a class="dropdown-item" href="pants.html">Pants</a></li>
+                    <li><a class="dropdown-item" href="shirts.html">Shirts</a></li>
+                    <li><a class="dropdown-item" href="Hoodies.html">Hoddies</a></li>
+                  </ul>
+                </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kids.html">kid</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Conntact</a>
+        </li>
+      </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
